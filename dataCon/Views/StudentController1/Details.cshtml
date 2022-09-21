@@ -1,0 +1,46 @@
+﻿@model dataConnec
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Student Details</h1>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model=>model.Name)
+        </dt>
+        <dd>
+             @Html.DisplayFor(model=>model.Name)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model=>model.Address)
+        </dt>
+        <dd>
+             @Html.DisplayFor(model=>model.Address)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model=>model.Age)
+        </dt>
+        <dd>
+             @Html.DisplayFor(model=>model.Age)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model=>model.Number)
+        </dt>
+        <dd>
+             @Html.DisplayFor(model=>model.Number)
+        </dd>
+
+        
+
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Index">Back to the main page</a>
+</div>
